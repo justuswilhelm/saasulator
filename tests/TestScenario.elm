@@ -1,4 +1,4 @@
-module Tests exposing (..)
+module TestScenario exposing (..)
 
 import Test exposing (..)
 import Expect
@@ -77,7 +77,7 @@ math =
                     Expect.equal 0 <| Math.customerAcquisitionCost constantScenario constantScenario.months
             , test "10 * 50 for constantLossyScenario" <|
                 \() ->
-                    Expect.equal -500 <| Math.customerAcquisitionCost constantLossyScenario constantLossyScenario.months
+                    Expect.equal 500 <| Math.customerAcquisitionCost constantLossyScenario constantLossyScenario.months
             ]
         , describe "earnings"
             [ describe "emptyScenario"
